@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- CSS File -->
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Title   -->
+  <title>Frontend Mentor | Calculator app</title>
+
+</head>
+
+<body class="main-background">
+
+  <div class="calc">
+    <header>
+      <h4>calc</h4>
+      <div class="themes">
+        <span style="margin-right: 15px;">THEME</span>
+        <div class="themesChoice">
+          <div class="num">
+            <label class="theme" data-steps="5">1</label>
+            <label class="theme-2" data-steps="22">2</label>
+            <label class="theme-3" data-steps="43">3</label>
+          </div>
+          <div class="nums-themes">
+            <span class="ball"></span>
+
+          </div>
+        </div>
+      </div>
+    </header>
+    <input type="text" id="input">
+    <div class="nums">
+      <button class="n" onclick="select('7')">7</button>
+      <button class="n" onclick="select('8')">8</button>
+      <button class="n" onclick="select('9')">9</button>
+      <button class="" id="del">DEL</button>
+      <button class="n" onclick="select('4')">4</button>
+      <button class="n" onclick="select('5')">5</button>
+      <button class="n" onclick="select('6')">6</button>
+      <button class="n" onclick="select('+')">+</button>
+      <button class="n" onclick="select('1')">1</button>
+      <button class="n" onclick="select('2')">2</button>
+      <button class="n" onclick="select('3')">3</button>
+      <button class="n" onclick="select('-')">-</button>
+      <button class="n" onclick="select('.')">.</button>
+      <button class="n" onclick="select('0')">0</button>
+      <button class="n" onclick="select('/')">/</button>
+      <button class="n" onclick="select('*')">x</button>
+      <div class="reset-result">
+        <button id="reset">RESET</button>
+        <button id="equal">=</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Mohamed Khaled</a>.
+  </div>
+  <script src="./main.js"></script>
+</body>
+
+</html>
